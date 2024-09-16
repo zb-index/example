@@ -34,5 +34,12 @@
     ]
   },
   "minimum-stability": "dev",
-  "prefer-stable": false
+  "prefer-stable": false,
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Mak\\Example\\Providers\\ExampleServiceProvider"
+      ]
+    }
+  }
 }
