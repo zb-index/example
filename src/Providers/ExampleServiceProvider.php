@@ -13,5 +13,9 @@ class ExampleServiceProvider extends ServiceProvider
         }
 
         $this->loadRoutesFrom(__DIR__ . '/../../routes/api.php');
+
+        $this->publishes([
+            '/../Swagger/' => app_path('Swagger'),
+        ]);
     }
 }
